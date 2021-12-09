@@ -1,4 +1,4 @@
-export const ADDRESS = "0xb6d7e94d5c2526cf64fe7a04C01C34a110632068";
+export const ADDRESS = "0x90Da01378F0dD345F1CDA753a24AbfBEB87f671a";
 export const ABI = [
   {
     inputs: [],
@@ -253,6 +253,19 @@ export const ABI = [
         internalType: "struct TransportService.WorkerSchedule",
         name: "",
         type: "tuple",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "getUsersCount",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
       },
     ],
     stateMutability: "view",

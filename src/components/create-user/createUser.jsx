@@ -28,7 +28,7 @@ export default function CreateUser() {
   const [address, setAddress] = useState("");
   const [role, setRole] = useState(0);
   const [open, setOpen] = useState(false);
-  console.log(account, contract);
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     console.log(account);
