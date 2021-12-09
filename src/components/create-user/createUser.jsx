@@ -32,8 +32,9 @@ export default function CreateUser() {
     console.log(name, 123432, address, role, accounts[0]);
     contract.methods
       .createUser(name, 123234, address, role)
-      .send({ from: accounts[0] })
-      .once("receipt", () => console.log("success"));
+      .send({ from: accounts[0], gas: 4700000, gasPrice: 8000000000 })
+      .then((res) => console.log(res))
+      .catch(console.log);
   };
 
   return (
